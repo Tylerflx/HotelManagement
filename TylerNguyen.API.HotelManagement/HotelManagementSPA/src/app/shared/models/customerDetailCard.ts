@@ -21,7 +21,7 @@ export interface Rooms {
     services: Service[];
 }
 
-export interface CustomerDetailCard {
+export interface CustomerDetail {
     id: number;
     roomno: number;
     cname: string;
