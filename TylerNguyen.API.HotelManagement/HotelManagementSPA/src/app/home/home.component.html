@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr class="text-center">
+            <th scope="col">Id</th>
+            <th scope="col">Customer Name</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let customer of customers">
+              <!-- call child component and pass customer card obj through input prop -->
+            <app-customer-card [customer] = "customer"></app-customer-card>
+        </tbody>
+    </table>
+</div>
+
+
+  <!-- Directive : special attribute in angular that will give functionaloty to HTML -->
+  <!-- Built in directive : ngFor, ngIf, ngSwitch -->
